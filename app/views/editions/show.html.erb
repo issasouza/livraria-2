@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @edition %>
+
+<div>
+  <%= link_to "Editar essa edição", edit_edition_path(@edition) %> |
+  <%= link_to "Voltar para edição", editions_path %>
+
+  <%= button_to "Excluir", @edition, method: :delete %>
+</div>

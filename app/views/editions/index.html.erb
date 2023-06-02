@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Editions</h1>
+
+<div id="editions">
+  <% @editions.each do |edition| %>
+    <%= render edition %>
+    <p>
+      <%= link_to "Mostrar edição", edition %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Nova edição", new_edition_path %>
